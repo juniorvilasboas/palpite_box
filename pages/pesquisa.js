@@ -2,6 +2,23 @@ import React from 'react'
 import Link from 'next/link'
 
 const Pesquisa = () => {
+  const save = async () => {
+    const form = {
+      Nome: 'aaaa',
+      Email: 'bbbb',
+      Whatsapp: 'cccc'
+    }
+    try {
+      const response = await fetch('/api/save', {
+        method: 'POST',
+        body: JSON.stringify(form)
+      })
+      const data = await response.JSON()
+      console.log(data)
+    } catch (err) {
+
+    }
+  }
   return (
     <div className='pt-12'>
       <h1 className='text-center font-bold my-4 text-2xl'>Criticas e sugestões</h1>
@@ -25,7 +42,7 @@ const Pesquisa = () => {
       </div>
       <div className=' text-center my-12'>
         <Link href='/'>
-          <a className='bg-blue-400 px-12 py-4 font-bold rounded-xl shadow-lg hover:shadow'>Enviar crítica ou sugestão</a>
+          <button className='bg-blue-400 px-12 py-4 font-bold rounded-xl shadow-lg hover:shadow' onClick={save}>Enviar crítica ou sugestão</button>
         </Link>
       </div>
       <p className='m-12 text-center'>
