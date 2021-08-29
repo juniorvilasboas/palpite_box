@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import useSWR from 'swr'
+import PageTitle from '../components/PageTitle'
 
 const fetcher = (...args) => fetch(...args).then(res => res.json())
 
@@ -8,6 +9,7 @@ const Index = () => {
   const { data, error } = useSWR('/api/get-promo', fetcher)
   return (
     <div className='pt-12'>
+      <PageTitle title='Home' />
       <p className='mt-4 text-center'>
         O restaurante {' '}
         {!data && <p>empresa.nome</p>}
