@@ -13,6 +13,7 @@ const Pesquisa = () => {
   })
 
   const notas = [0, 1, 2, 3, 4, 5]
+  const indicacoes = ['Sim', 'Não']
   const [success, setSuccess] = useState(false)
   const [retorno, setRetorno] = useState({})
 
@@ -63,7 +64,7 @@ const Pesquisa = () => {
           <label className='font-bold'>Seu nome:</label>
           <input className='bg-blue-100 w-72 p-2 mt-1 mb-2 rounded-md' type='text' placeholder='Nome' onChange={onChange} name='Nome' value={form.Nome} />
           <label className='font-bold'>E-mail:</label>
-          <input className='bg-blue-100 w-72 p-2 mt-1 mb-2 rounded-md' type='text' placeholder='Email' onChange={onChange} name='Email' value={form.Email} />
+          <input className='bg-blue-100 w-72 p-2 mt-1 mb-2 rounded-md' type='email' placeholder='Email' onChange={onChange} name='Email' value={form.Email} />
           <label className='font-bold'>Whatsapp:</label>
           <input className='bg-blue-100 w-72 p-2 mt-1 mb-2 rounded-md' type='text' placeholder='Whatsapp' onChange={onChange} name='Whatsapp' value={form.Whatsapp} />
           <label className='font-bold'>Sua crítica ou sugestão:</label>
@@ -82,8 +83,24 @@ const Pesquisa = () => {
               </div>
             </div>
           </div>
-          <label className='font-bold'>Você indicaria para um amigo:</label>
-          <input className='bg-blue-100 w-72 p-2 mt-1 mb-2 rounded-md' type='text' placeholder='Indicação' onChange={onChange} name='Indicacao' value={form.Indicacao} />
+          <div>
+            <label className='font-bold'>Você indicaria para um amigo:</label>
+            <br />
+            <div className=' my-4 mx-auto text-center'>
+              <div className='flex'>
+                {indicacoes.map(indicacao =>
+                  <label className='block w-1/2 text-center'>
+                    {indicacao} <br />
+                    <input type='radio' name='Indicacao' value={indicacao} onChange={onChange} />
+                  </label>
+                )}
+              </div>
+            </div>
+          </div>
+
+          <pre>
+            {JSON.stringify(form, null, 2)}
+          </pre>
 
           <div className=' text-center my-12'>
             <button className='bg-blue-400 px-12 py-4 font-bold rounded-xl shadow-lg hover:shadow' onClick={save}>Enviar crítica ou sugestão</button>
