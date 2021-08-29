@@ -9,7 +9,7 @@ const Pesquisa = () => {
     Whatsapp: '',
     Sugestao: '',
     Nota: 0,
-    Indicacao: 'Sim'
+    Indicacao: ''
   })
 
   const notas = [0, 1, 2, 3, 4, 5]
@@ -97,10 +97,6 @@ const Pesquisa = () => {
               </div>
             </div>
           </div>
-
-          <pre>
-            {JSON.stringify(form, null, 2)}
-          </pre>
 
           <div className=' text-center my-12'>
             <button className='bg-blue-400 px-12 py-4 font-bold rounded-xl shadow-lg hover:shadow' onClick={save}>Enviar crítica ou sugestão</button>
