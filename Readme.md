@@ -17,7 +17,7 @@ npm run dev
 
 ## Layout:
 
-Criamos o layout utilizando o Figma. Você pode encontrar o arquivo [aqui](https://www.figma.com/file/9bUM0ZS9hzXS9eh9VMXEbc/resume?node-id=0%3A1){:target="_blank"}.
+Criamos o layout utilizando o Figma. Você pode encontrar o arquivo [aqui](https://www.figma.com/file/9bUM0ZS9hzXS9eh9VMXEbc/resume?node-id=0%3A1{:target="_blank"}).
 
 ## Colocando em produção:
 
@@ -25,15 +25,15 @@ Este projeto pode ser colocado em produção utilizando o Vercel (sem configura�
 
 ## Construído com:
 
-* [NextJS](https://nextjs.org/){:target="_blank"} -The React Framework.
-* [TailwindCSS](https://tailwindcss.com/){:target="_blank"} - A utility-first CSS framework for
+* [NextJS](https://nextjs.org/{:target="_blank"}) -The React Framework.
+* [TailwindCSS](https://tailwindcss.com/{:target="_blank"}) - A utility-first CSS framework for
 rapidly building custom designs.
-* [Figma](https://figma.com/){:target="_blank"} - Online prototyping tool.
-* [PurgeCSS](https://purgecss.com/){:target="_blank"} - Remove unused CSS. 
+* [Figma](https://figma.com/{:target="_blank"}) - Online prototyping tool.
+* [PurgeCSS](https://purgecss.com/{:target="_blank"}) - Remove unused CSS. 
 
 ## Author:
 
-* **Moacyr Santana** - [LinkedIn](https://www.linkedin.com/in/moacyrsantana/){:target="_blank"}
+* **Moacyr Santana** - [LinkedIn](https://www.linkedin.com/in/moacyrsantana/{:target="_blank"})
 
 
 ## Licença
@@ -42,4 +42,4 @@ Este projeto é licenciado sobre a licença MIT - veja [LICENSE](LICENSE) para m
 
 ## Acknowledgments
 
-* Este projeto foi construído durante as aulas do Fullstack Master do [DevPleno](https://devpleno.com){:target="_blank"}.
+* Este projeto foi construído durante as aulas do Fullstack Master do [DevPleno](https://devpleno.com{:target="_blank"}).
